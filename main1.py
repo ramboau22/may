@@ -4,7 +4,7 @@ import json
 
 # logging.basicConfig(level=logging.INFO, filename='%(asctime)s - %(levelname)s - %(message)s')
 def save_data_to_json(data):
-    with open("data.json", "w") as file:
+    with open("data.json", "a") as file:
         json.dump(data, file, indent=4)
     # logging.info("data is saved as json!!!")
 
